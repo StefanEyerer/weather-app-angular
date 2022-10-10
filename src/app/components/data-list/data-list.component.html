@@ -1,0 +1,13 @@
+<section>
+  <app-data-item
+    *ngFor="let datapoint of datapoints"
+    [datapoint]="datapoint"
+  ></app-data-item>
+  <button
+    *ngIf="datapoints.length"
+    class="w-full cursor-pointer rounded-md p-2 text-2xl bg-blue-900"
+    (click)="handleReset()"
+  >
+    Reset Data
+  </button>
+</section>

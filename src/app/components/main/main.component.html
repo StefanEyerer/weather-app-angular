@@ -1,3 +1,9 @@
 <main>
-  <h1>Main Content</h1>
+  <div class="flex flex-col gap-12">
+    <h1 class="text-center text-4xl">
+      Get current weather data for any location!
+    </h1>
+    <app-search></app-search>
+    <app-data-list [datapoints]="(weatherData$ | async) || []"></app-data-list>
+  </div>
 </main>
