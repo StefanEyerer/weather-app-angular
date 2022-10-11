@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { WeatherData } from '../../types/weather-data.interface';
 
 @Component({
   selector: 'app-data-item',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
 })
 export class DataItemComponent {
   @Input()
-  public datapoint: any;
+  public datapoint!: WeatherData;
 }

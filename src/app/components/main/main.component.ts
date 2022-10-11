@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
-import { of } from 'rxjs';
-import { data } from '../../mock-data';
+import { WeatherService } from '../../services/weather.service';
 
 @Component({
   selector: 'app-main',
   templateUrl: './main.component.html',
 })
 export class MainComponent {
-  public weatherData$ = of(data);
+  public constructor(public readonly weatherService: WeatherService) {}
+
+  public handleSubmit(location: string) {
+    this.weatherService.requestWeatherData(location);
+  }
+
+  public handleReset() {
+    this.weatherService.resetWeatherData();
+  }
 }
