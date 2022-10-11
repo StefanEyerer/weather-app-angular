@@ -1,27 +1,43 @@
-# WeatherAppAngular
+# Simple Weather App with Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.5.
+This is a simple Weather App created with Angular.
+It lets you request real weather data for any location.
 
-## Development server
+## Getting Started
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Prerequisites
 
-## Code scaffolding
+This is a list of prerequisites, that need to be installed on your system:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- [NodeJS](https://nodejs.org/en/) - JavaScript runtime
+- [NPM](https://www.npmjs.com/) - Node Package Manager
 
-## Build
+### Installing the dependencies
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+The following command installs all required dependencies:
 
-## Running unit tests
+```
+npm install
+```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Building the application
 
-## Running end-to-end tests
+The following command builds the application:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+```
+npm run build
+```
 
-## Further help
+### Starting the application
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+The following command starts the application:
+
+```
+npm run start
+```
+
+In order to actually request weather data you need to replace the string "**\<ADD_API_KEY_HERE>**" in the **weather.service.ts** file with your actual Api Key from [weatherapi.com](https://www.weatherapi.com/).
+
+## Author
+
+- **Stefan Eyerer**
